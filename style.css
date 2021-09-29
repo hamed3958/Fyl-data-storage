@@ -13,15 +13,14 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: bottom;
- ;
 }
 
-.con1{
+.con1 {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  align-content:center;
-  height: 100vh
+  align-content: center;
+  height: 100vh;
 }
 
 .container {
@@ -138,6 +137,58 @@ body {
   line-height: 14px;
   letter-spacing: 0px;
   color: #dbd9ff;
+}
+
+.bubble {
+  position: absolute;
+  left: 695px;
+  bottom: 130px;
+}
+
+.rectangle {
+  width: 179px;
+  height: 72px;
+  background: #ffffff;
+  box-shadow: 0px 75px 100px -30px rgba(0, 0, 0, 0.24776);
+  border-radius: 10px 10px 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rectangle:after {
+  content: "";
+  position: absolute;
+  bottom: -17px;
+  left: 159px;
+  width: 0;
+  height: 0;
+  border: 38px solid transparent;
+  border-top-color: #ffffff;
+  border-bottom: 0;
+  border-right: 0;
+  margin-left: -18px;
+  margin-bottom: -20px;
+  box-shadow: 0px 75px 100px rgba(0, 0, 0, 0.24776);
+}
+
+.bubBold {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  color: #0c122c;
+  opacity: 0.5;
+  display: inline;
+  margin-left: 9px;
+}
+
+.ultraBold {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 40px;
+  color: #0c122c;
+  display: inline;
 }
 
 .attribution {
