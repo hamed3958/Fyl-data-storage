@@ -25,13 +25,12 @@ body {
 
 .container {
   position: relative;
+  width: 920px;
+  height: 201px;
+  top: -17px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  width: 920px;
-  height: 201px;
-  position: relative;
-  top: -17px;
 }
 
 .leftBox {
@@ -139,6 +138,10 @@ body {
   color: #dbd9ff;
 }
 
+.mobile-bubble {
+  display: none;
+}
+
 .bubble {
   position: absolute;
   left: 695px;
@@ -203,6 +206,80 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+
+/***********************************media query**************************/
+
+@media screen and (max-width: 920px) {
+  body {
+    background-image: url(images/bg-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  con1 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-content: center;
+    height: auto;
+  }
+
+  .container {
+    position: relative;
+    width: 326px;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+
+  .leftBox {
+    width: 326px;
+    height: 201px;
+  }
+
+  .rightBox {
+    width: 326px;
+    height: 160px;
+    margin-top: 16px;
+  }
+
+  .progress {
+    width: 262px;
+    height: 20px;
+  }
+
+  .txt {
+    width: 262px;
+    height: 14px;
+  }
+
+  .bubble {
+    display: none;
+  }
+
+  .mobile-bubble {
+    display: inline;
+    width: 179px;
+    height: 72px;
+    position: absolute;
+    left: 72px;
+    top: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0px 75px 100px -30px rgba(0, 0, 0, 0.24776);
+    border-radius: 10px;
+    animation: popup 3s 1 linear;
+  }
+}
+
+
+/************************** animation****************************/
+
 
 @keyframes progres {
   0% {
