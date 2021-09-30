@@ -204,7 +204,7 @@ body {
   bottom: 0;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(189, 3%, 55%);
 }
 
 
@@ -279,7 +279,6 @@ body {
 
 
 /************************** animation****************************/
-
 
 @keyframes progres {
   0% {
